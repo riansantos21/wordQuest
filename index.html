@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Word Quest RPG - Frieren Edition</title>
+
+    <link rel="stylesheet" href="assets/styles/main.css">
+
+</head>
+
+<body>
+
+    <div class="game-container">
+
+        <header>
+
+            <img
+                src="https://nerdizmo.ig.com.br/wp-content/uploads/2024/01/frieren-artigo-img3.jpg"
+                alt="Frieren"
+                class="banner-image"
+            >
+
+            <h1> Word Quest RPG - Frieren </h1>
+
+            <div class="top-info">
+
+                <p>
+                    Chapter:
+                    <span id="chapter">1</span>
+                </p>
+
+                <p>
+                    XP:
+                    <span id="xp">0</span>
+                </p>
+
+                <p>
+                    Lives:
+                    <span id="lives">3</span>
+                </p>
+
+            </div>
+
+            <div class="progress-bar">
+
+                <div id="progress"></div>
+
+            </div>
+
+        </header>
+
+        <main>
+
+            <div id="story-area"></div>
+
+            <div id="choices"></div>
+
+            <div id="feedback"></div>
+
+        </main>
+
+    </div>
+
+    <div id="final-screen" class="hidden">
+
+        <h1> The End</h1>
+
+        <p id="final-xp"></p>
+
+        <div id="story-summary"></div>
+
+        <button class="restart-btn" onclick="restartGame()">
+            Restart Adventure
+        </button>
+
+    </div>
+
+    <script src="assets/scripts/storyMode.js"></script>
+
+</body>
+
+</html>

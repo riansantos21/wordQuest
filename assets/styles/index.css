@@ -1,0 +1,156 @@
+body{
+  background: linear-gradient(180deg,#081120,#10233f,#1d3557);
+  color:white;
+  font-family:Arial,sans-serif;
+  margin:0;
+  min-height:100vh;
+}
+
+.game-container{
+  max-width:1000px;
+  margin:20px auto;
+  padding:25px;
+  background:rgba(255,255,255,.05);
+  border-radius:20px;
+}
+
+.banner-image{
+  width:100%;
+  height:400px;
+  object-fit:cover;
+  border-radius:20px;
+  margin-bottom:20px;
+}
+
+h1{
+  text-align:center;
+  font-size:3rem;
+  margin:10px 0;
+}
+
+.subtitle{
+  text-align:center;
+  color:#cbd5e1;
+  margin-bottom:25px;
+}
+
+.top-info{
+  display:flex;
+  justify-content:space-around;
+  padding:15px;
+  background:rgba(255,255,255,.05);
+  border-radius:15px;
+  margin-bottom:20px;
+}
+
+.progress-bar{
+  width:100%;
+  height:20px;
+  background:#1e293b;
+  border-radius:20px;
+  overflow:hidden;
+  margin-bottom:25px;
+}
+
+#progress{
+  width:0%;
+  height:100%;
+  background:linear-gradient(
+    90deg,
+    #60a5fa,
+    #818cf8,
+    #c084fc
+  );
+  transition:.5s;
+}
+
+#story-area{
+  background:rgba(255,255,255,.08);
+  padding:25px;
+  border-radius:15px;
+  margin-bottom:20px;
+}
+
+#story-area h2{
+  color:#93c5fd;
+}
+
+#story-area p{
+  line-height:1.7;
+  font-size:18px;
+}
+
+#choices{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  justify-content:center;
+}
+
+button{
+  padding:12px 18px;
+  border:none;
+  border-radius:12px;
+  background:linear-gradient(
+    45deg,
+    #3b82f6,
+    #8b5cf6
+  );
+  color:white;
+  cursor:pointer;
+}
+
+button:hover{
+  transform:translateY(-2px);
+}
+
+.correct{
+  color:#4ade80;
+  font-weight:bold;
+}
+
+.wrong{
+  color:#f87171;
+  font-weight:bold;
+}
+
+.hidden{
+  display:none;
+}
+
+#final-screen{
+  text-align:center;
+  padding:40px;
+}
+
+#story-summary{
+  background:rgba(255,255,255,.08);
+  padding:20px;
+  border-radius:15px;
+  margin-top:20px;
+  text-align:left;
+}
+
+.restart-btn{
+  margin-top:20px;
+  background:linear-gradient(
+    45deg,
+    #22c55e,
+    #16a34a
+  );
+}
+
+@media(max-width:768px){
+  .banner-image{
+    height:220px;
+  }
+
+  .top-info{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  h1{
+    font-size:2rem;
+  }
+}
